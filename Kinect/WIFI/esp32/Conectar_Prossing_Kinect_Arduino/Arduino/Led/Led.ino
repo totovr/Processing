@@ -1,11 +1,11 @@
 char val; // Data received from the serial port
-int ledPin = 13; // Set the pin to digital I/O 13
-int ledPIN = 11; // Set the pin to digital I/O 11
+int ledPin = 14; // Set the pin to digital I/O 14
+int ledPIN = 33; // Set the pin to digital I/O 7
 
 void setup() {
    pinMode(ledPin, OUTPUT); // Set pin as OUTPUT
    pinMode(ledPIN, OUTPUT); // Set pin as OUTPUT
-   Serial.begin(9600); // Start serial communication at 9600 bps
+   Serial.begin(115200); // Start serial communication at 9600 bps
  }
 
 void loop() {
