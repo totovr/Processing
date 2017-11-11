@@ -8,11 +8,14 @@ It can be found under the heading "Stable Releases" on the page at http://proces
 
   # Important this version just work for Processing v.2.2.1. it will not work for version 3.x of Processing
 
+If you did not find the version it will be included in the next Download Link too
+
 2.- Setup Openni
 
 Download this version of Simple Openni from the next link:
 
       https://mega.nz/#F!KdIC2KpC!ZvyfZuwEfz0k6tjuizt5fg
+
 
 3.- Locate Openni
 
@@ -53,7 +56,7 @@ Syphon (Mac OS Only)
 Connect your Xbox Kinect motion sensor to your computer in an available USB port. Ensure the sensor is connected
 to a power source.
 
-Open the Processing application again. 
+Open the Processing application again.
 
 Open:
 
