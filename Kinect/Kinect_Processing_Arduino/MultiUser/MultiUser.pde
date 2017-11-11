@@ -125,7 +125,7 @@ void draw() {
         
         if (LeftelbowAngle >= 50)
         {                           //if we clicked in the window
-           myPort.write("2");         //send a 1
+           myPort.write("2");         //send a 2
            println("2");
         } else
         {                           //otherwise
