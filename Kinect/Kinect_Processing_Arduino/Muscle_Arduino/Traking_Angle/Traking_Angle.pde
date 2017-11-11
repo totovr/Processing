@@ -61,7 +61,7 @@ void draw() {
      float elbowAngle = angleOf(rightHand2D,rightElbow2D,upperArmOrientation);
      // show the angles on the screen for debugging
      fill(255,0,0);
-     scale(3);
+     scale(2);
      text("shoulder: " + int(shoulderAngle) + "\n" + " elbow: " + int(elbowAngle), 20, 20);
     
      //Here I started to send information to the Arduino

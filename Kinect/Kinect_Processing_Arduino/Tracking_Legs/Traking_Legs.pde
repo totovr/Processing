@@ -13,7 +13,7 @@ PVector com2d = new PVector();
 void setup() {
  kinect = new SimpleOpenNI(this);
  kinect.enableDepth();
- kinect.enableIR();
+ //kinect.enableIR();
  kinect.enableUser();// because of the version this change
  size(640, 480);
  fill(255, 0, 0);
@@ -28,9 +28,9 @@ void setup() {
 
 void draw() {
   kinect.update();
-  image(kinect.depthImage(), 0, 0);
- // image(kinect.irImage(),kinect.depthWidth(),0);
-  //image(kinect.userImage(),0,0);
+ //image(kinect.depthImage(), 0, 0);
+ //image(kinect.irImage(),kinect.depthWidth(),0);
+ image(kinect.userImage(),0,0);
 
 
   IntVector userList = new IntVector();
@@ -128,7 +128,7 @@ void draw() {
     {
       kinect.convertRealWorldToProjective(com,com2d);
       stroke(100,255,0);
-      strokeWeight(1);
+      strokeWeight(3);
       beginShape(LINES);
         vertex(com2d.x,com2d.y - 5);
         vertex(com2d.x,com2d.y + 5);
