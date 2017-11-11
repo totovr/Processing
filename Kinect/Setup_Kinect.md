@@ -50,7 +50,11 @@ Syphon (Mac OS Only)
 
 Connect your Xbox Kinect motion sensor to your computer in an available USB port. Ensure the sensor is connected
 to a power source.
-Open the Processing application again. Close the empty sketch.
-Use the examples of SimpleOpenni to review if the sensor is working
 
-![alt text](https://github.com/totovr/Python/blob/master/Images/version%20.png)
+Open the Processing application again. Close the empty sketch.
+
+Open:
+
+    https://github.com/totovr/Processing/tree/master/Kinect/Angle_Tracking_KV1_ProssingV2.2.1_Arduino_Demo
+
+![alt text](https://github.com/totovr/Processing/tree/master/Kinect/Images)
