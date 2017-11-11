@@ -53,7 +53,7 @@ Syphon (Mac OS Only)
 Connect your Xbox Kinect motion sensor to your computer in an available USB port. Ensure the sensor is connected
 to a power source.
 
-Open the Processing application again. Close the empty sketch.
+Open the Processing application again. 
 
 Open:
 
