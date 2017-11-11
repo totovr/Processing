@@ -8,7 +8,7 @@ It can be found under the heading "Stable Releases" on the page at http://proces
 
   # Important this version just work for Processing v.2.2.1. it will not work for version 3.x of Processing
 
-If you did not find the version it will be included in the next Download Link too
+If you did not find the version it will be included inside the next link too
 
 2.- Setup Openni
 
@@ -19,8 +19,8 @@ Download this version of Simple Openni from the next link:
 
 3.- Locate Openni
 
-In the Step 2 you unzipped the file "SimpleOpenNI_1.96_osx_kinect_1473.zip" and a
-folder called SimpleOpenNI was created.
+Unzipped the file "SimpleOpenNI" and a
+folder called SimpleOpenNI will be created.
 Select the folder SimpleOpenNI and choose Edit > Copy
 Go to the Finder
 Choose Go > Go to Folder... and enter “~/Documents/Processing/libraries/" without
