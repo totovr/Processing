@@ -13,4 +13,6 @@ Arduino
 
 # The instructions to Setup the Kinect are written for Mac OS High Sierra users.
 
+![alt text](https://github.com/totovr/Processing/blob/master/Images/deep.png)
 
+![alt text](https://github.com/totovr/Processing/blob/master/Images/Point.png)
