@@ -18,7 +18,7 @@ Download this version of Simple Openni from the next link:
 
 In the Step 2 you unzipped the file "SimpleOpenNI_1.96_osx_kinect_1473.zip" and a
 folder called SimpleOpenNI was created.
-Select the folder SimpleOpenNI and choose Edit > Copy 
+Select the folder SimpleOpenNI and choose Edit > Copy
 Go to the Finder
 Choose Go > Go to Folder... and enter “~/Documents/Processing/libraries/" without
 the quotation marks. Click OK..
@@ -40,7 +40,9 @@ Navigate to:
 
     /Users/USERNAME/Documents/Processing/libraries
 
-You should see these folders:
+# This path could change depending where did Processing is installed    
+
+You should see the next folders:
 
 oscP5
 SimpleOpenNI
