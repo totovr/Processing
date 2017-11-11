@@ -4,15 +4,21 @@ import processing.serial.*;
 //Generate a SimpleOpenNI object
 SimpleOpenNI kinect;
 
+// Create object from Serial class
 Serial myPort;  // Create object from Serial class
+
+PVector com = new PVector();                                   
+PVector com2d = new PVector();
 
 void setup() {
  kinect = new SimpleOpenNI(this);
  kinect.enableDepth();
+ kinect.enableIR();
  kinect.enableUser();// because of the version this change
  size(640, 480);
  fill(255, 0, 0);
- kinect.setMirror(true);
+ //size(kinect.depthWidth()+kinect.irWidth(), kinect.depthHeight());
+ kinect.setMirror(false);
 
  //Open the serial port
  String portName = Serial.list()[1]; //change the 0 to a 1 or 2 etc. to match your port
@@ -23,6 +29,9 @@ void setup() {
 void draw() {
   kinect.update();
   image(kinect.depthImage(), 0, 0);
+ // image(kinect.irImage(),kinect.depthWidth(),0);
+  //image(kinect.userImage(),0,0);
+
 
   IntVector userList = new IntVector();
   kinect.getUsers(userList);
@@ -86,7 +95,7 @@ void draw() {
 
      // calculate the angles between our joints for leftside
      float LeftshoulderAngle = angleOf(leftElbow2D, leftShoulder2D, torsoLOrientation);
-     float LeftelbowAngle = angleOf(leftHand2D,rightElbow2D,upperArmLOrientation);
+     float LeftelbowAngle = angleOf(leftHand2D,leftElbow2D,upperArmLOrientation);
      // show the angles on the screen for debugging
      fill(255,0,0);
      scale(1);
@@ -103,6 +112,34 @@ void draw() {
           myPort.write('0');          //send a 0
           println("0");
         }
+        
+        if (LeftelbowAngle >= 50)
+        {                           //if we clicked in the window
+           myPort.write("2");         //send a 2
+           println("2");
+        } else
+        {                           //otherwise
+          myPort.write("0_0");          //send a 0
+          println("0_0");
+        }
+        
+        // draw the center of mass
+    if(kinect.getCoM(userId,com))
+    {
+      kinect.convertRealWorldToProjective(com,com2d);
+      stroke(100,255,0);
+      strokeWeight(1);
+      beginShape(LINES);
+        vertex(com2d.x,com2d.y - 5);
+        vertex(com2d.x,com2d.y + 5);
+
+        vertex(com2d.x - 5,com2d.y);
+        vertex(com2d.x + 5,com2d.y);
+      endShape();
+      
+      fill(0,255,100);
+      text(Integer.toString(userId),com2d.x,com2d.y);
+    }
 
     }
 
