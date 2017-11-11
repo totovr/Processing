@@ -2,11 +2,9 @@
 
 Steps to setup Kinect V1 in Mac
 
-1.- Install Processing v2.2.1.
+1.- Install Processing v3.3.6.
 
 It can be found under the heading "Stable Releases" on the page at http://processing.org/download/
-
-  # Important this version just work for Processing v.2.2.1. it will not work for version 3.x of Processing
 
 If you did not find the version it will be included in the next Download Link too
 
@@ -14,13 +12,13 @@ If you did not find the version it will be included in the next Download Link to
 
 Download this version of Simple Openni from the next link:
 
-      https://mega.nz/#F!KdIC2KpC!ZvyfZuwEfz0k6tjuizt5fg
+      https://mega.nz/#F!ORxG3RYJ!p-gfkggjMWzlbT__Dwm_0g
 
 
 3.- Locate Openni
 
-In the Step 2 you unzipped the file "SimpleOpenNI_1.96_osx_kinect_1473.zip" and a
-folder called SimpleOpenNI was created.
+Unzipped the file "SimpleOpenNI.zip" and a
+folder called SimpleOpenNI will be created.
 Select the folder SimpleOpenNI and choose Edit > Copy
 Go to the Finder
 Choose Go > Go to Folder... and enter “~/Documents/Processing/libraries/" without

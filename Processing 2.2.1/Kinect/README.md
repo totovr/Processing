@@ -1,4 +1,4 @@
-#Kinect V1 and Procesing V3.3.6
+#Kinect V1 and Procesing V2.2.1
 
 In this sketches I'm using SimpleOpenni library to generate different
 examples to use Kinect V1.
