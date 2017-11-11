@@ -80,8 +80,8 @@ void draw() {
      float RightshoulderAngle = angleOf(rightElbow2D, rightShoulder2D, torsoOrientation);
      float RightelbowAngle = angleOf(rightHand2D,rightElbow2D,upperArmOrientation);
      // show the angles on the screen for debugging
-     fill(255,0,0);
-     scale(3);
+     fill(0,250,0);
+     scale(1);
      text("Right shoulder: " + int(RightshoulderAngle) + "\n" + " Right elbow: " + int(RightelbowAngle), 20, 20);
 
      // calculate the angles between our joints for leftside
@@ -89,8 +89,8 @@ void draw() {
      float LeftelbowAngle = angleOf(leftHand2D,rightElbow2D,upperArmLOrientation);
      // show the angles on the screen for debugging
      fill(255,0,0);
-     scale(3);
-     text("Left shoulder: " + int(LeftshoulderAngle) + "\n" + " Left elbow: " + int(LeftelbowAngle), 20, 20);
+     scale(1);
+     text("Left shoulder: " + int(LeftshoulderAngle) + "\n" + " Left elbow: " + int(LeftelbowAngle), 20, 55);
 
      //Here I started to send information to the Arduino
 
@@ -180,4 +180,9 @@ joint);
 void onNewUser(SimpleOpenNI kinect, int userID){
   println("Start skeleton tracking");
   kinect.startTrackingSkeleton(userID);
+}
+
+void onLostUser(SimpleOpenNI curContext, int userId)
+{
+  println("onLostUser - userId: " + userId);
 }
