@@ -105,7 +105,7 @@ void draw() {
 
      // calculate the angles between our joints for leftside
      float LeftshoulderAngle = angleOf(leftElbow2D, leftShoulder2D, torsoLOrientation);
-     float LeftelbowAngle = angleOf(leftHand2D,rightElbow2D,upperArmLOrientation);
+     float LeftelbowAngle = angleOf(leftHand2D,leftElbow2D,upperArmLOrientation);
      // show the angles on the screen for debugging
      fill(255,0,0);
      scale(1);
