@@ -6,6 +6,7 @@ Programs using Processing V2.2.1 and V3.3.6.
 
 Kinect V1
 Arduino
+Leap Motion
 
 # This examples just work with Kinect V1.
 
