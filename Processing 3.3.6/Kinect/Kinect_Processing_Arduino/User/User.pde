@@ -1,14 +1,3 @@
-/* --------------------------------------------------------------------------
- * SimpleOpenNI User Test
- * --------------------------------------------------------------------------
- * Processing Wrapper for the OpenNI/Kinect 2 library
- * http://code.google.com/p/simple-openni
- * --------------------------------------------------------------------------
- * prog:  Max Rheiner / Interaction Design / Zhdk / http://iad.zhdk.ch/
- * date:  12/12/2012 (m/d/y)
- * ----------------------------------------------------------------------------
- */
-
 import SimpleOpenNI.*;
 
 SimpleOpenNI  context;
