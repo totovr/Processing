@@ -1,5 +1,24 @@
-import SimpleOpenNI.*;
-import processing.serial.*;
+import processing.core.*; 
+import processing.data.*; 
+import processing.event.*; 
+import processing.opengl.*; 
+
+import SimpleOpenNI.*; 
+import processing.serial.*; 
+
+import java.util.HashMap; 
+import java.util.ArrayList; 
+import java.io.File; 
+import java.io.BufferedReader; 
+import java.io.PrintWriter; 
+import java.io.InputStream; 
+import java.io.OutputStream; 
+import java.io.IOException; 
+
+public class Traking_Angle_LR_UP extends PApplet {
+
+
+
 
 //Generate a SimpleOpenNI object
 SimpleOpenNI kinect;
@@ -10,12 +29,12 @@ Serial myPort;  // Create object from Serial class
 PVector com = new PVector();
 PVector com2d = new PVector();
 
-void setup() {
+public void setup() {
  kinect = new SimpleOpenNI(this);
  kinect.enableDepth();
  //kinect.enableIR();
  kinect.enableUser();// because of the version this change
- size(640, 480);
+ 
  fill(255, 0, 0);
  //size(kinect.depthWidth()+kinect.irWidth(), kinect.depthHeight());
  kinect.setMirror(false);
@@ -26,7 +45,7 @@ void setup() {
 
 }
 
-void draw() {
+public void draw() {
   kinect.update();
  //image(kinect.depthImage(), 0, 0);
  //image(kinect.irImage(),kinect.depthWidth(),0);
@@ -91,7 +110,7 @@ void draw() {
      // show the angles on the screen for debugging
      fill(0,250,0);
      scale(2);
-     text("Right shoulder: " + int(RightshoulderAngle) + "\n" + " Right elbow: " + int(RightelbowAngle), 20, 20);
+     text("Right shoulder: " + PApplet.parseInt(RightshoulderAngle) + "\n" + " Right elbow: " + PApplet.parseInt(RightelbowAngle), 20, 20);
 
      // calculate the angles between our joints for leftside
      float LeftshoulderAngle = angleOf(leftElbow2D, leftShoulder2D, torsoLOrientation);
@@ -99,7 +118,7 @@ void draw() {
      // show the angles on the screen for debugging
      fill(255,0,0);
      scale(2);
-     text("Left shoulder: " + int(LeftshoulderAngle) + "\n" + " Left elbow: " + int(LeftelbowAngle), 20, 55);
+     text("Left shoulder: " + PApplet.parseInt(LeftshoulderAngle) + "\n" + " Left elbow: " + PApplet.parseInt(LeftelbowAngle), 20, 55);
 
      //Here I started to send information to the Arduino
 
@@ -149,7 +168,7 @@ void draw() {
 
 //Draw the skeleton
 
-void drawSkeleton(int userId) {
+public void drawSkeleton(int userId) {
 
  stroke(0);
  strokeWeight(5);
@@ -193,12 +212,12 @@ void drawSkeleton(int userId) {
  drawJoint(userId, SimpleOpenNI.SKEL_LEFT_HAND);
 }
 
-void drawJoint(int userId, int jointID) {
+public void drawJoint(int userId, int jointID) {
  PVector joint = new PVector();
 
  float confidence = kinect.getJointPositionSkeleton(userId, jointID,
 joint);
- if(confidence < 0.5){
+ if(confidence < 0.5f){
    return;
  }
  PVector convertedJoint = new PVector();
@@ -207,19 +226,29 @@ joint);
 }
 
 //Generate the angle
- float angleOf(PVector one, PVector two, PVector axis){
+ public float angleOf(PVector one, PVector two, PVector axis){
  PVector limb = PVector.sub(two, one);
  return degrees(PVector.angleBetween(limb, axis));
 }
 
 //Calibration not required
 
-void onNewUser(SimpleOpenNI kinect, int userID){
+public void onNewUser(SimpleOpenNI kinect, int userID){
   println("Start skeleton tracking");
   kinect.startTrackingSkeleton(userID);
 }
 
-void onLostUser(SimpleOpenNI curContext, int userId)
+public void onLostUser(SimpleOpenNI curContext, int userId)
 {
   println("onLostUser - userId: " + userId);
+}
+  public void settings() {  size(640, 480); }
+  static public void main(String[] passedArgs) {
+    String[] appletArgs = new String[] { "Traking_Angle_LR_UP" };
+    if (passedArgs != null) {
+      PApplet.main(concat(appletArgs, passedArgs));
+    } else {
+      PApplet.main(appletArgs);
+    }
+  }
 }
