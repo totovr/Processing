@@ -38,6 +38,7 @@ float RightelbowAngle = 0;
 
 //Legs
 float RightLegAngle = 0;
+float LeftLegAngle = 0;
 
 public void setup() {
 
@@ -285,16 +286,40 @@ public void draw() {
         PVector rightFoot2D = new PVector(rightFoot.x, rightFoot.y);
         PVector rightKnee2D = new PVector(rightKnee.x, rightKnee.y);
         PVector rightHip2DLeg = new PVector(rightHipL.x,rightHipL.y);
-        //PVector rightShoulder = new PVector(rightShoulder.x, rightShoulder.y);
         // calculate the axes against which we want to measure our angles
         PVector RightLegOrientation = PVector.sub(rightKnee2D, rightHip2DLeg);
 
         // calculate the angles between our joints for rightside
         RightLegAngle = angleOf(rightFoot2D,rightKnee2D,RightLegOrientation);
-        // show the angles on the screen for debugging
-        fill(0,0,250);
+
+        fill(255,0,0);
         scale(1);
-        text("Right Knee: " + PApplet.parseInt(RightLegAngle), 60, 60);
+        text("Right Knee: " + PApplet.parseInt(RightLegAngle), 500, 20);
+
+        // get the positions of the three joints of our left leg
+        PVector leftFoot = new PVector();
+        kinect.getJointPositionSkeleton(userId,SimpleOpenNI.SKEL_LEFT_FOOT,leftFoot);
+        PVector leftKnee = new PVector();
+        kinect.getJointPositionSkeleton(userId,SimpleOpenNI.SKEL_LEFT_KNEE,leftKnee);
+        PVector leftHipL = new PVector();
+        kinect.getJointPositionSkeleton(userId,SimpleOpenNI.SKEL_LEFT_HIP,leftHipL);
+
+        // reduce our joint vectors to two dimensions for left side
+        PVector leftFoot2D = new PVector(leftFoot.x, leftFoot.y);
+        PVector leftKnee2D = new PVector(leftKnee.x, leftKnee.y);
+        PVector leftHip2DLeg = new PVector(leftHipL.x,leftHipL.y);
+        // calculate the axes against which we want to measure our angles
+        PVector LeftLegOrientation = PVector.sub(leftKnee2D, leftHip2DLeg);
+
+        // calculate the angles between our joints for left side
+        LeftLegAngle = angleOf(leftFoot2D,leftKnee2D,LeftLegOrientation);
+
+        // show the angles on the screen for debugging
+        fill(255,0,0);
+        scale(1);
+        text("Leftt Knee: " + PApplet.parseInt(LeftLegAngle), 500, 55);
+
+
       }
   public void settings() {  size(640, 480); }
   static public void main(String[] passedArgs) {
