@@ -59,15 +59,18 @@ This is one simple example draw a Ellipse in the sketch window.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details of the code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/totovr/Processing/blob/master/CONTRIBUTING.md) for details of the code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
 I use [SemVer](http://semver.org/) for versioning.
 
-## Authors
+## Author
 
-* Antonio Vega Ramirez [Github](https://github.com/totovr)
+Antonio Vega Ramirez:
+
+* [Github](https://github.com/totovr)
+* [Twitter](https://twitter.com/SpainDice)
 
 ## License
 
