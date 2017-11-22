@@ -69,13 +69,10 @@ void draw() {
       drawSkeleton(userId);
       //drawUpAngles
       ArmsAngle(userId);
-      //ArduinoSerialLegs();
       //Draw the user Mass
       MassUser(userId);
       //AngleLeg
-      //LegsAngle(userId);
-      //Arduino serial for legs
-      //ArduinoSerialLegs();
+      LegsAngle(userId);
 
     }
 
@@ -321,20 +318,20 @@ void drawJoint(int userId, int jointID) {
       void ArduinoSerialLegs(){
 
         if(RightLegAngle <= 150){
-          myPort.write("3");         //send a 3
-          println("3");
+          myPort.write("4");         //send a 4
+          println("4");
           } else{                           //otherwise
-            myPort.write("0_3");          //send a 0_3
-            println("0_3");
+            myPort.write("5");          //send a 5
+            println("5");
           }
 
           if(LeftLegAngle <= 150){
-            myPort.write("4");         //send a 4
-            println("4");
+            myPort.write("6");         //send a 6
+            println("6");
             } else{
               //otherwise
-              myPort.write("0_4");          //send a 0_4
-              println("0_4");
+              myPort.write("7");          //send a 7
+              println("7");
             }
 
           }
