@@ -9,7 +9,7 @@ examples to use Kinect V1.
 
 ### Check the next file to setup the Kinect in OSX:
 
-* [Setup_Kinect.md](https://github.com/totovr/SimpleOpenni/tree/Processing_3.3.6)
+* [Setup_Kinect.md](https://github.com/totovr/Processing/blob/Processing-3.3.6/Kinect/Setup_Kinect.md)
 
 ### This programs are working because of the work of Max Rheiner and his Project:
 
