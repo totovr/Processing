@@ -1,6 +1,10 @@
 # Processing
 
-Processing programs for different applications, change of branch depending of your currently version:
+Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning and prototyping.
+
+for more information check the [Processing](https://processing.org/reference/)
+
+This respository contanins Processing programs for different applications, change of branch depending of your currently version:
 
 * Programs using Processing V2.2.1:
 
@@ -50,7 +54,7 @@ void draw() {
     ellipse(mouseX, mouseY, 80, 80); //If we pressed the mouse a Ellipse will be draw
 }
 ```
-This is one simple example draw a Ellipse in the sketch window.
+This is one simple example of how to draw a Ellipse in the sketch window.
 
 ## Also you can use the next IDE to build programs:
 
