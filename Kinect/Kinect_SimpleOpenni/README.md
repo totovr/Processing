@@ -13,4 +13,4 @@ examples to use Kinect V1.
 
 ### This programs are working because of the work of Max Rheiner and his Project:
 
-    https://code.google.com/archive/p/simple-openni/
+* [SimpleOpenni](https://code.google.com/archive/p/simple-openni/)
