@@ -12,7 +12,7 @@ If you did not find the version it will be included in the next Download Link to
 
 Download this version of Simple Openni from the next link:
 
-      https://mega.nz/#F!ORxG3RYJ!p-gfkggjMWzlbT__Dwm_0g
+      [Processing_3.3.6](https://github.com/totovr/SimpleOpenni/tree/Processing_3.3.6)
 
 
 3.- Locate Openni
@@ -47,7 +47,7 @@ You should see the next folders:
 
 oscP5
 SimpleOpenNI
-Syphon (Mac OS Only)
+Syphon
 
 6.- Test the Kinect Setup
 
@@ -56,8 +56,9 @@ to a power source.
 
 Open the Processing application again.
 
-Open:
+Copy and Paste in the new Sketch the next code:
 
-    https://github.com/totovr/Processing/tree/master/Kinect/Angle_Tracking_KV1_ProssingV2.2.1_Arduino_Demo
+    [Traking_Angle.pde](https://github.com/totovr/Processing/blob/Processing-3.3.6/Kinect/Kinect_SimpleOpenni/Angle_Tracking_KV1_ProssingV3.3.6_Arduino_Demo/Traking_Angle/Traking_Angle.pde)
+
 
   ![alt text](https://github.com/totovr/Processing/blob/master/Kinect/Images/Check.png)
