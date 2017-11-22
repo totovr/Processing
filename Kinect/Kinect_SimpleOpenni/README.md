@@ -1,7 +1,7 @@
 # Kinect V1 and Procesing V3.3.6
 
-In this sketches I'm using SimpleOpenni and OpenKinect libraries to generate different
-examples using Kinect V1.
+In this sketches I'm using SimpleOpenni library to generate different
+examples to use Kinect V1.
 
 ### You can download directly the SimpleOpenni library from the next repo:
 
@@ -9,7 +9,7 @@ examples using Kinect V1.
 
 ### Check the next file to setup the Kinect in OSX:
 
-* [Setup_Kinect.md](https://github.com/totovr/Processing/blob/Processing-3.3.6/Kinect/Setup_Kinect.md)
+* [Setup_Kinect.md](https://github.com/totovr/SimpleOpenni/tree/Processing_3.3.6)
 
 ### This programs are working because of the work of Max Rheiner and his Project:
 
