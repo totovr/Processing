@@ -1,4 +1,4 @@
-#Examples of using Kinect V1 using OpenKinect library
+#Examples of using Kinect V1 and V2 using OpenKinect library
 
 for more information go to:
 
