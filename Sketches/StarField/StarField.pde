@@ -18,4 +18,6 @@ void draw() {
     stars[i].update();
     stars[i].show();
   }
+  //Activate to save video
+  //saveFrame("output/line-######.png");
 }
