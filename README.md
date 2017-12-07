@@ -84,4 +84,4 @@ This project is licensed under The MIT License (MIT) - see the [LICENSE.md](http
 
 ![Deep](https://github.com/totovr/Processing/blob/master/Images/deep.png)
 
-![Skeleton_tracking](https://github.com/totovr/Processing/blob/master/Images/deep.png)https://github.com/totovr/Processing/blob/master/Images/Skeleton_Tracking.png
+![Skeleton_tracking](https://github.com/totovr/Processing/blob/master/Images/Skeleton_Tracking.png)
