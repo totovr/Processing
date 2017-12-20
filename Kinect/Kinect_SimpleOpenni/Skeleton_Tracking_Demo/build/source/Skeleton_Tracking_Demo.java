@@ -263,7 +263,7 @@ public void drawJoint(int userId, int jointID) {
 
   public void ArduinoSerialArms(){
 
-    if(RightelbowAngle >= 50){
+    if(RightelbowAngle <= 110){
       //if we clicked in the window
       myPort.write("1");         //send a 1
       println("1");
@@ -272,7 +272,7 @@ public void drawJoint(int userId, int jointID) {
         println("0");
       }
 
-      if(LeftelbowAngle >= 50){
+      if(LeftelbowAngle <= 110){
         //if we clicked in the window
         myPort.write('2');         //send a 2
         println('2');
@@ -397,7 +397,7 @@ public void drawJoint(int userId, int jointID) {
 
 }
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "Skeleton_Tracking_Demo" };
+    String[] appletArgs = new String[] { "--present", "--window-color=#666666", "--stop-color=#cccccc", "Skeleton_Tracking_Demo" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {

@@ -243,7 +243,7 @@ void drawJoint(int userId, int jointID) {
 
   void ArduinoSerialArms(){
 
-    if(RightelbowAngle >= 50){
+    if(RightelbowAngle <= 110){
       //if we clicked in the window
       myPort.write("1");         //send a 1
       println("1");
@@ -252,7 +252,7 @@ void drawJoint(int userId, int jointID) {
         println("0");
       }
 
-      if(LeftelbowAngle >= 50){
+      if(LeftelbowAngle <= 110){
         //if we clicked in the window
         myPort.write('2');         //send a 2
         println('2');
