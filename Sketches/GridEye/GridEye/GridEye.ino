@@ -4,7 +4,7 @@
 GridEye myeye;
 
 void setup(void) {
-  // Join the I 2 C bus
+  // Join the I2C bus
   Wire.begin();
   // Set the frame rate to 10
   myeye.setFramerate(10);
