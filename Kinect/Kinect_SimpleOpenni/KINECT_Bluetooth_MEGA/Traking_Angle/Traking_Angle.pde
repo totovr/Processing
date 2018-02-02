@@ -6,6 +6,8 @@ SimpleOpenNI kinect;
 
 Serial myPort;  // Create object from Serial class
 
+float a = 0;
+
 void setup() {
  kinect = new SimpleOpenNI(this);
  kinect.enableDepth();
@@ -18,7 +20,10 @@ void setup() {
  String portName = Serial.list()[5]; //change the 0 to a 1 or 2 etc. to match your port
  println(portName);
  delay(2000);
- myPort = new Serial(this, portName, 38400);
+ myPort = new Serial(this, portName, 115200);
+ while (a < 5000) {         // cycle of 3 seconds duration, during this time
+ println(a);
+ a = millis ();}            // you need to press the RESET buttom.
  
 }
 
