@@ -78,17 +78,16 @@ Antonio Vega Ramirez:
 
 ## License
 
-<<<<<<< HEAD
 This project is licensed under CC License - see the [LICENSE.md](https://creativecommons.org/licenses/by/4.0/) file for details
-=======
-This project is licensed under The MIT License (MIT) - see the [LICENSE.md](https://github.com/totovr/Processing/blob/master/LICENSE.md) file for details
->>>>>>> master
 
 ### The instructions to Setup the Kinect are written for Mac OS High Sierra users.
 
-![Deep](https://github.com/totovr/Processing/blob/master/Images/deep.png)
-<<<<<<< HEAD
-=======
+## Images
 
-![Skeleton_tracking](https://github.com/totovr/Processing/blob/master/Images/Skeleton_Tracking.png)
->>>>>>> master
+<img src="https://github.com/totovr/SimpleOpenni/blob/master/Images/Skeleton_Tracking.png" width="600">
+<img src="https://github.com/totovr/SimpleOpenni/blob/master/Images/deep.png" width="600">
+
+## Video
+
+* [Youtube Video](https://www.youtube.com/watch?v=5n5qqz3RfPM)
+
