@@ -2,14 +2,9 @@
 
 Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning and prototyping.
 
-<<<<<<< HEAD
-for more information check the [Processing](https://processing.org/reference/)
+For more information check the [Processing](https://processing.org/reference/) official site
 
-This repository contains programs for different applications in Processing 3.3.6
-=======
-For more information check [Processing.org](https://processing.org/reference/)
-
-This respository contanins Processing programs for different applications, change of branch depending of your currently version:
+##### This respository contanins Processing programs for different applications, change of branch depending of your currently version:
 
 * Programs using Processing V2.2.1:
 
@@ -18,7 +13,6 @@ This respository contanins Processing programs for different applications, chang
 * Programs using Processing V3.3.6:
 
     https://github.com/totovr/Processing/tree/Processing-3.3.6
->>>>>>> master
 
 ## Getting Started
 
@@ -37,11 +31,7 @@ Alternative:
 
 ### Installing
 
-<<<<<<< HEAD
-Install the Processing 3.3.6 IDE, you can download it from this page:
-=======
-Install the last stable version of Processing IDE, you can download it from this page:
->>>>>>> master
+If you dont have processing in your PC install the Processing 3.3.6 IDE, you can download it from this page:
 
 * [Processing IDE](https://processing.org/download/)
 
@@ -66,7 +56,7 @@ void draw() {
 ```
 This is one simple example of how to draw a Ellipse in the sketch window.
 
-## Also you can use the next IDE to build programs:
+## Also you can use the next editors to build programs:
 
 * [Processing Online Editor](http://js.do/blog/processing/editor/)
 * [Atom](https://atom.io/)
