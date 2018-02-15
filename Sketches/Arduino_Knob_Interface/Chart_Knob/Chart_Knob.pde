@@ -59,7 +59,6 @@ void Serial_read(){
                 if (valor == 100) {
                         life = life - 20;
                         myKnobA.setValue(life);
-
                 }
         }
 }
