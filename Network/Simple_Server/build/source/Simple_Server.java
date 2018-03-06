@@ -14,7 +14,7 @@ import java.io.InputStream;
 import java.io.OutputStream; 
 import java.io.IOException; 
 
-public class Server_example extends PApplet {
+public class Simple_Server extends PApplet {
 
 // Import the net libraries
 
@@ -75,7 +75,7 @@ public void serverEvent(Server server, Client client) {
 }
   public void settings() {  size(400,200); }
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "--present", "--window-color=#666666", "--stop-color=#cccccc", "Server_example" };
+    String[] appletArgs = new String[] { "--present", "--window-color=#666666", "--stop-color=#cccccc", "Simple_Server" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {
