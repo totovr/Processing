@@ -14,6 +14,10 @@ This respository contanins Processing programs for different applications, chang
 
     https://github.com/totovr/Processing/tree/Processing-3.3.6
 
+* Programs using Processing V3.3.7:
+
+    https://github.com/totovr/Processing/tree/Processing-3.3.7
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -26,8 +30,10 @@ These instructions will get you a copy of the project up and running on your loc
 Alternative:
 
 * Kinect V1
+* Kinect V2
 * Arduino IDE
 * Arduino board
+* Atom
 
 ### Installing
 
