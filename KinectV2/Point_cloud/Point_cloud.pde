@@ -7,7 +7,7 @@ SimpleOpenNI kinect;
 void setup()
 {
 
-  size( 1024, 768, OPENGL);
+  size( 1024, 768, P3D);
 
   kinect = new SimpleOpenNI( this );
 
