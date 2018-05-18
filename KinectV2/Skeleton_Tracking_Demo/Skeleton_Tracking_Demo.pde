@@ -22,7 +22,7 @@ float RightLegAngle = 0;
 float LeftLegAngle = 0;
 
 void settings() {
-  size(640, 480);
+  size(500, 420);
 }
 
 void setup() {
@@ -260,6 +260,7 @@ void LegsAngle(int userId) {
   scale(1);
   text("Leftt Knee: " + int(LeftLegAngle), 500, 55);
   //ArduinoSerialLegs();
+
 }
 
 void ArduinoSerialLegs(){
