@@ -22,7 +22,10 @@ float RightLegAngle = 0;
 float LeftLegAngle = 0;
 
 void settings() {
-  size(500, 420);
+  //size for Kinect V2
+  //size(500, 420);
+  //size for Kinect V1
+  size(640, 480);
 }
 
 void setup() {
@@ -106,7 +109,7 @@ void drawJoint(int userId, int jointID) {
   PVector joint = new PVector();
   float confidence = kinect.getJointPositionSkeleton(userId, jointID,
     joint);
-    if(confidence < 0.5){
+    if(confidence < 0.8){
       return;
     }
     PVector convertedJoint = new PVector();
