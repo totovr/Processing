@@ -4,19 +4,13 @@ Processing is a flexible software sketchbook and a language for learning how to 
 
 For more information check [Processing.org](https://processing.org/reference/)
 
-This respository contanins Processing programs for different applications, change of branch depending of your currently version:
+This repository contains Processing programs for different applications, change of branch depending of your currently version:
 
-* Programs using Processing V2.2.1:
+* Programs using Processing [V2.2.1](https://github.com/totovr/Processing/tree/Processing-2.2.1)
 
-    https://github.com/totovr/Processing/tree/Processing-2.2.1
+* Programs using Processing [V3.3.6](https://github.com/totovr/Processing/tree/Processing-3.3.6)
 
-* Programs using Processing V3.3.6:
-
-    https://github.com/totovr/Processing/tree/Processing-3.3.6
-
-* Programs using Processing V3.3.7:
-
-    https://github.com/totovr/Processing/tree/Processing-3.3.7
+* Programs using Processing [V3.3.7](https://github.com/totovr/Processing/tree/Processing-3.3.7)
 
 ## Getting Started
 
